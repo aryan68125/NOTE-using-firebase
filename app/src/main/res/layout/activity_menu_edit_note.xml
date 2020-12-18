@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="core_module.MenuEditNote">
+
+    <EditText
+        android:id="@+id/MenueditNoteContentEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        android:gravity="top"
+        android:hint="Content of your note"
+        android:padding="18dp"
+        android:textColor="#050505"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Menutoolbar"
+        android:textCursorDrawable="@drawable/color_cursor"/>
+
+    <ProgressBar
+        android:id="@+id/MenuprogressBar2"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/grey"
+        android:backgroundTint="@color/grey"
+        android:hapticFeedbackEnabled="true"
+        android:progressBackgroundTint="@color/grey"
+        android:progressDrawable="@drawable/customprogressbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/MenutextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saving..."
+        android:textColor="#F7F4F4"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/MenuprogressBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Menutoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <EditText
+            android:id="@+id/MenueditNoteTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_focused"
+            android:hint="Title of note"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FCFBFB"
+            android:textStyle="bold"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/MenuEditedSaveNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edit"
+        android:backgroundTint="@color/notgreen"
+        app:backgroundTint="?android:attr/fastScrollTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="38dp"
+        app:srcCompat="@drawable/ic_save_black_24dp" />
+
+    <ImageView
+        android:id="@+id/speech_to_text2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/mic"
+        app:layout_constraintBottom_toTopOf="@+id/MenuEditedSaveNotes"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

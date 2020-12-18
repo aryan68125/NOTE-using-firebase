@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "705576463441",
+    "project_id": "taking-notes-77e4c",
+    "storage_bucket": "taking-notes-77e4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705576463441:android:e0420f4e8c5a7230099c70",
+        "android_client_info": {
+          "package_name": "com.aditya.takingnotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705576463441-d6r3p6ukf4po1mcls9niu25gnqaehh65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aditya.takingnotes",
+            "certificate_hash": "7831946a7c4cf59bd2509a5aaf9660f9bf8a727e"
+          }
+        },
+        {
+          "client_id": "705576463441-ev35p4nilj21ggh9p82v03ma5hat86ej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs1sO1kAlEJiz90uQUWtASDhWqvIv4Irg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705576463441-ev35p4nilj21ggh9p82v03ma5hat86ej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

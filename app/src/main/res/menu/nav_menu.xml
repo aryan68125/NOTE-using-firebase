@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="General">
+
+        <menu>
+            <item
+                android:id="@+id/add_notes"
+                android:icon="@drawable/add_icon"
+                android:title="add note" />
+            <item
+                android:id="@+id/Sync_note"
+                android:icon="@drawable/sync"
+                android:title="sync note" />
+
+        </menu>
+
+    </item>
+    <item android:title="Log out">
+
+        <menu>
+            <item
+                android:id="@+id/register"
+                android:icon="@drawable/register"
+                android:title="Register Now" />
+            <item
+                android:id="@+id/log_in"
+                android:icon="@drawable/log_in"
+                android:title="Login" />
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/log_out"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+    <item android:title="Developer">
+
+    <menu>
+        <item
+            android:id="@+id/developer"
+            android:icon="@drawable/dev"
+            android:title="Developer Information" />
+    </menu>
+    </item>
+
+</menu>

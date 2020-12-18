@@ -4,8 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ObjectAnimator;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -42,6 +45,14 @@ service cloud.firestore {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        //check the internet connection
+        if(!isNetworkAvailable()){
+            Toast.makeText(this, "No Internet Connection!", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(this, "Internet Connection DETECTED!", Toast.LENGTH_SHORT).show();
+        }
 
         //creating an Instance of Firebase Authentication System
         authentication = FirebaseAuth.getInstance();
@@ -122,6 +133,14 @@ service cloud.firestore {
         if (hasFocus) {
             hideSystemUI();
         }
+    }
+
+    //check if the device is connected or not
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     private void hideSystemUI() {

@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dev_bg"
     tools:context="core_module.DevActivity">
 
     <ListView
         android:id="@+id/listView"
         android:layout_width="323dp"
-        android:layout_height="240dp"
+        android:layout_height="130dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,12 +20,13 @@
         android:id="@+id/textView4"
         android:layout_width="345dp"
         android:layout_height="189dp"
+        android:layout_marginTop="20dp"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

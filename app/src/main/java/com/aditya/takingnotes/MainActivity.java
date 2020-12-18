@@ -82,14 +82,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //check the internet connection
-        if(!isNetworkAvailable()){
-            Toast.makeText(this, "No Internet Connection!", Toast.LENGTH_SHORT).show();
-        }
-        else{
-            Toast.makeText(this, "Internet Connection DETECTED!", Toast.LENGTH_SHORT).show();
-        }
-
         //geting the instance of our fireStore
         firebaseFirestore = FirebaseFirestore.getInstance();
         authentication = FirebaseAuth.getInstance();
@@ -358,14 +350,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
             finish();
         }
-    }
-
-    //check if the device is connected or not
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     //this method will generate randome colours using out colors xml file inside the values folder

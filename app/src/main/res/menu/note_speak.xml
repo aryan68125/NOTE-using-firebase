@@ -6,4 +6,9 @@
         android:id="@+id/speak"
         android:icon="@drawable/speech"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/export"
+        android:icon="@drawable/export"
+        android:title="export"
+        app:showAsAction="ifRoom" />
 </menu>

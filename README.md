@@ -3,4 +3,4 @@ This is a simple Notes app that uses Firebase online database For storing Notes 
 I have speech to text and text to speech engines built in for dictation and reading feature
 
 Here are some i preview images
-![](android/res/drawable/three.png)
+![](app/src/main/res/drawable/one.png)

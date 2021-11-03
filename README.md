@@ -1,7 +1,6 @@
 # NOTE-using-firebase
-This is a simple Notes app that uses Firebase online database For storing Notes it does not have Image support 
-I have speech to text and text to speech engines built in for dictation and reading feature
-NOTE:- you have to create your account in this app before you can save important notes 
+This is a simple Notes app that uses the firebase online database for storing notes in the cloud.
+I have speech-to-text and text-to-speech engines built-in for dictation and reading features.
 
 Here are some i preview images
 ![](app/src/main/res/drawable/one.png)

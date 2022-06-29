@@ -2,6 +2,8 @@
 This is a simple Notes app that uses the firebase online database for storing notes in the cloud.
 I have speech-to-text and text-to-speech engines built-in for dictation and reading features.
 
+You can download the application in apk form from releases section
+
 Here are some preview images
 ![](app/src/main/res/drawable/one.png)
 ![](app/src/main/res/drawable/two.png)
